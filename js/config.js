@@ -55,11 +55,11 @@ export const getConfig = () => {
       top: versionData.title_top,
       style: versionData.title_style
     },
-    groom: { role: "신랑", name: "최 낙 훈" },
-    bride: { role: "신부", name: "김 민 영" },
-    dateTime: "2026. 08. 29. SAT 13 : 00",
-    venue: "라도무스아트센터 3F 아트리움홀",
-    // calendar: { year: 2026, month: 8, day: 29 },
+    groom: { role: "신랑", name: "임 창 혁" },
+    bride: { role: "신부", name: "강 지 완" },
+    dateTime: "2026. 09. 19. SAT 17 : 00",
+    venue: "더 화이트 베일 1F 화이트베일홀",
+    // calendar: { year: 2026, month: 9, day: 19 },
     greeting: [
       "여름의 끝자락에 만난 두 사람은<br>봄이 오면 함께 벚꽃을 보러 가자고<br>약속했습니다.",
       "그 약속처럼 서로의 계절이 되어<br>가장 아름다운 시간을 함께했습니다.",
@@ -68,19 +68,19 @@ export const getConfig = () => {
     ],
     parents: {
       groom: {
-        names: "최명근 · 유정진",
+        names: "임순빈 · 조경자",
         relation: "의 장남",
-        child: "최낙훈"
+        child: "임창혁"
       },
       bride: {
-        names: "김동권 · 고영희",
+        names: "강영인 · 한석현",
         relation: "의 장녀",
-        child: "김민영"
+        child: "강지완"
       }
     },
     location: {
-      venue: "라도무스아트센터",
-      hall: "3F 아트리움홀",
+      venue: "더 화이트 베일",
+      hall: "1F 화이트베일홀",
       address: "대전 유성구 동서대로 639",
       addressDetail: "대전 유성구 원신흥동 578-6",
       coords: { lat: 36.3262, lng: 127.3385, name: "라도무스아트센터" }, // TODO: 이거 동작 잘 하는지 봐야함. 밑에 links 으로만 되는거같아서
