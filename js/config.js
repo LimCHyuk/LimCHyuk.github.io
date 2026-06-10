@@ -85,9 +85,9 @@ export const getConfig = () => {
       coords: { lat: 36.3262, lng: 127.3385, name: "더 화이트베일" }, // TODO: 이거 동작 잘 하는지 봐야함. 밑에 links 으로만 되는거같아서
     },
     links: {
-      tmap: "https://tmap.life/d2eea2f4",
-      kakao: "https://kko.to/ZuJQ8r42vA",
-      naver: "https://map.naver.com/v5/search/라도무스아트센터웨딩홀"
+      tmap: "https://tmap.life/f9b9aa85",
+      kakao: "https://kko.to/LPsU0I-XTm",
+      naver: "https://naver.me/xFLuN7bN"
     },
     transport: [
       {
@@ -108,13 +108,13 @@ export const getConfig = () => {
 //          "도안네거리 방향으로 이동"
         ]
       },
-      {
-        type: "기차 이용 시",
-        desc: [
-          "대전역에서 603번 버스 탑승",
-          "목원대학교 하차 후 도보 이동"
-       ]
-      },
+//      {
+//        type: "기차 이용 시",
+//        desc: [
+//          "대전역에서 603번 버스 탑승",
+//         "목원대학교 하차 후 도보 이동"
+//       ]
+//      },
     ],
     gallery: {
       imageCount: 18,
