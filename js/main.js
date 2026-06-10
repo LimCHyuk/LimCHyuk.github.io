@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. 기능별 초기화 함수 호출 (에러로 인해 다음 코드가 멈추지 않도록 안전하게 실행)
   try {
     if (typeof renderCalendar === 'function') {
-      renderCalendar('wedding-calendar', 2026, 8, 29);
+      renderCalendar('wedding-calendar', 2026, 9, 19);
     } else {
       console.warn('renderCalendar 함수가 정의되지 않았습니다.');
     }
