@@ -1,0 +1,184 @@
+@import url('../css/variables.css');
+
+body{
+  font-family: var(--font-sans);
+  background: var(--color-outer);
+  color: var(--font-primary-color);
+  -webkit-font-smoothing:antialiased;
+
+  /* 텍스트 선택 방지 */
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  /* 마우스 드래그 방지 */
+  -webkit-user-drag: none;
+
+  /* 이미지 길게 누를 때 뜨는 메뉴 차단 */
+  -webkit-touch-callout: none; 
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  
+  background: #d2e0eb;
+  animation: pageReveal 2s ease forwards;
+}
+
+@keyframes pageReveal {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+} */
+
+
+/* Center the app and constrain width for mobile-first layout */
+#app{
+  max-width:480px;
+  margin:0 auto;
+  box-shadow: none;
+  background: var(--color-bg);
+}
+
+.container{
+  padding:1rem
+}
+
+.section{
+  padding:1.5rem 0;
+  /* border-bottom:1px solid var(--color-divider); */
+  opacity:0;
+  transform:translateY(12px);
+  transition:opacity .45s ease,transform .45s ease;
+}
+.section.in-view{
+  opacity:1;
+  transform:none
+}
+
+/* .cover__inner{
+  height:22rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg,var(--color-accent-light),var(--color-accent))
+} */
+/* .cover__title{
+  font-family:var(--font-display);
+  font-size:2rem;
+  color:var(--color-outer)
+} */
+
+/* .gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:0.5rem
+}
+.thumb{
+  background:var(--color-divider);
+  padding-top:100%
+} */
+
+/* .btn{
+  display:inline-block;
+  padding:.6rem 1rem;
+  background:var(--color-primary);
+  color:var(--color-outer);border-radius:6px
+} */
+
+
+/* simple fadeInUp utility (used by JS) */
+@keyframes fadeInUp{
+  from{
+    opacity:0;transform:translateY(12px)
+  }
+  to{
+    opacity:1;
+    transform:none
+  }
+}
+
+
+/* Reduce paddings slightly on very small screens */
+@media (max-width:360px){
+  .container{padding:.75rem}
+  .section{padding:1rem 0}
+}
+
+.animate{
+  animation:fadeInUp .45s ease forwards
+}
+
+.title{
+  font-family: var(--font-title);
+  /* font-style: italic; */
+  font-weight: 400;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  /* font-size: clamp(1.2rem, 5vw, 1.4rem); */
+  color: var(--color-title);
+  /* letter-spacing: 0.2em; */
+  text-align: center;
+  padding: 0 0 1rem;
+}
+
+.divider{
+  padding: 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.divider img {
+  height: 15px;
+  width: auto;
+  opacity: 0.7;
+}
+
+.content {
+  background: var(--color-bg);
+  padding: 0rem 0 1.5rem;
+}
+
+.font-default {
+  font-family: var(--font-serif);
+  font-size: clamp(0.85rem, 3.5vw, 0.95rem);
+  font-weight: 300;
+  color: var(--font-secondary-color);
+  line-height: 1.9;
+  word-break: keep-all;
+}
+
+@font-face {
+  font-family: 'Golden Plains Demo';
+  src: url('../asset/font/Golden Plains Demo.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.description {
+  font-family: var(--font-serif);
+  font-size: clamp(0.85rem, 3.5vw, 0.95rem);
+  font-weight: 300;
+  color: var(--font-secondary-color);
+  line-height: 1.9;
+  word-break: keep-all;
+  text-align: center;
+}
+
+.footer-credit {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.75rem; /* 아주 작게 */
+  color: #999;       /* 눈에 띄지 않는 회색 */
+}
+
+.footer-credit a {
+  color: #777;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.footer-credit a:hover {
+  color: #333; /* 마우스 올렸을 때 살짝 진하게 */
+}

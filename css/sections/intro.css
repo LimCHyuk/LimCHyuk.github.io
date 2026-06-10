@@ -1,0 +1,157 @@
+/* ── Greeting 섹션 전체 ── */
+.greeting {
+  position: relative;
+  background-color: var(--color-point-bg);
+  overflow: hidden;
+}
+
+/* ── 종이 질감 배경 ── */
+.greeting__texture {
+  position: absolute;
+  inset: 0;
+  background-image: url('/asset/image/common/texture.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 1;       /* 질감 강도 조절 — 너무 강하면 낮춰요 */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── 상하 그라데이션 페이드 ── */
+.greeting__fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;       /* 페이드 범위 — 조절 가능 */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.greeting__fade--top {
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.greeting__fade--bottom {
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    var(--color-bg) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* ── 내부 콘텐츠 래퍼 ── */
+.greeting__inner {
+  position: relative;
+  z-index: 2;          /* texture·fade 위에 */
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── 인사말 텍스트 ── */
+.greeting__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.greeting__text p {
+  font-family: var(--font-serif);
+  font-size: clamp(0.88rem, 3.5vw, 0.97rem);
+  font-weight: 300;
+  color: var(--font-primary-color);
+  line-height: 1.95;
+  letter-spacing: 0.02em;
+  word-break: keep-all;
+}
+
+/* ── 반지 사진 (풀 width) ── */
+.greeting__photo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.greeting__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── 혼주 정보 ── */
+.greeting__parents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2.5rem 0 0.5rem;
+  text-align: center;
+}
+
+.greeting__parent-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.greeting__parent-name {
+  font-family: var(--font-serif);
+  font-size: clamp(0.92rem, 3.8vw, 1rem);
+  font-weight: 500;
+  color: var(--font-primary-color);
+  letter-spacing: 0.03em;
+}
+
+.greeting__parent-rel {
+  font-family: var(--font-serif);
+  font-size: clamp(0.78rem, 3vw, 0.85rem);
+  font-weight: 300;
+  color: var(--font-secondary-color);
+}
+
+.greeting__parent-child {
+  font-family: var(--font-serif);
+  font-size: clamp(0.92rem, 3.8vw, 1rem);
+  font-weight: 600;
+  color: var(--font-primary-color);
+  letter-spacing: 0.03em;
+}
+
+/* 이미지들을 감싸는 공통 컨테이너 */
+.greeting-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 방패 레이어 (이미지보다 위에서 입력을 가로챔) */
+.prevent-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: transparent;
+  -webkit-touch-callout: none; /* iOS 메뉴 차단 */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 기존 img 스타일이 부모 크기를 따르도록 수정 */
+.cover__photo img, .greeting__photo img {
+  width: 100%;
+  display: block;
+}

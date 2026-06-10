@@ -1,0 +1,39 @@
+/* 공유 섹션 전체 컨테이너 */
+.share {
+  background: var(--color-bg);
+  padding: 0rem 0 4rem;
+}
+
+.share__inner {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* 공통 버튼 스타일 */
+.btn-share {
+  width: 100%;
+  padding: 1.2rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+
+.btn-share:hover {
+  background: #faf7f4;
+}
+
+.btn-share:active {
+  transform: scale(0.99); /* 눌리는 느낌 효과 */
+}
