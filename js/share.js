@@ -1,7 +1,7 @@
 import { showToast } from "./util.js";
 
-const SHARE_TITLE = '최낙훈 ❤ 김민영 결혼식 초대';
-const SHARE_DESCRIPTION = '2026년 08월 29일, 라도무스아트하객님홀에서 함께 해주세요.';
+const SHARE_TITLE = '임창혁 ❤ 강지완 결혼식 초대';
+const SHARE_DESCRIPTION = '2026년 09월 19일, 라도무스아트하객님홀에서 함께 해주세요.';
 
 function initKakao() {
   if (!window.Kakao) {
