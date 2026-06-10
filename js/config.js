@@ -81,9 +81,9 @@ export const getConfig = () => {
     location: {
       venue: "더 화이트 베일",
       hall: "1F 화이트베일홀",
-      address: "대전 유성구 동서대로 639",
-      addressDetail: "대전 유성구 원신흥동 578-6",
-      coords: { lat: 36.3262, lng: 127.3385, name: "라도무스아트센터" }, // TODO: 이거 동작 잘 하는지 봐야함. 밑에 links 으로만 되는거같아서
+      address: "서울시 서초구 서초중앙로 14",
+      addressDetail: "서울시 서초구 서초동 1445-14 ",
+      coords: { lat: 36.3262, lng: 127.3385, name: "더 화이트베일" }, // TODO: 이거 동작 잘 하는지 봐야함. 밑에 links 으로만 되는거같아서
     },
     links: {
       tmap: "https://tmap.life/d2eea2f4",
@@ -94,7 +94,7 @@ export const getConfig = () => {
       {
         type: "자가용 이용 시",
         desc: [
-          "내비게이션 : '라도무스 아트센터' 검색",
+          "내비게이션 : '더화이트베일' 검색",
           "주차타워 진출입로가 혼잡하오니,",
           "조금 여유 있게 도착해 주시기 바랍니다."
         ]
@@ -102,7 +102,7 @@ export const getConfig = () => {
       {
         type: "대중교통 이용 시",
         desc: [
-          "지하철 : 유성온천역 6번 출구",
+          "지하철 : 남부터미널역 6번 출구",
           "버스 : 106, 115, 706번 이용",
           "106번, 115번 흥도초 하차 / 706번 법원등기국 하차 후",
           "도안네거리 방향으로 이동"
@@ -127,7 +127,7 @@ export const getConfig = () => {
       ],
       // (기존 groom, bride 계좌 데이터도 여기에 계속 관리하시면 됩니다)
       groom: [
-        { relation: '신랑',      bank: '국민', account: '945802-00-002017', holder: '최낙훈' },
+        { relation: '신랑',      bank: '농협', account: '302-2068-8107-51', holder: '임창혁' },
         { relation: '신랑 아버지', bank: '국민', account: '401-24-0381-933', holder: '최명근' },
         { relation: '신랑 어머니', bank: '국민', account: '406-21-0048-192', holder: '유정진' },
       ],
