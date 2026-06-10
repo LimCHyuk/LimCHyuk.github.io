@@ -128,13 +128,13 @@ export const getConfig = () => {
       // (기존 groom, bride 계좌 데이터도 여기에 계속 관리하시면 됩니다)
       groom: [
         { relation: '신랑',      bank: '농협', account: '302-2068-8107-51', holder: '임창혁' },
-        { relation: '신랑 아버지', bank: '국민', account: '401-24-0381-933', holder: '조경자' },
-        { relation: '신랑 어머니', bank: '은행', account: '계좌', holder: '임순빈' },
+        { relation: '혼주', bank: '국민', account: '401-24-0381-933', holder: '조경자' },
+//        { relation: '신랑 어머니', bank: '은행', account: '계좌', holder: '임순빈' },
       ],
       bride: [
         { relation: '신부',      bank: '기업', account: '049-062073-01-011', holder: '강지완' },
-        { relation: '신부 아버지', bank: '은행', account: '계좌', holder: '강영인' },
-        { relation: '신부 어머니', bank: '우리', account: '1002-034-5525-38', holder: '한석현' },
+//        { relation: '신부 아버지', bank: '은행', account: '계좌', holder: '강영인' },
+        { relation: '혼주', bank: '우리', account: '1002-034-5525-38', holder: '한석현' },
       ],
     }
   };
