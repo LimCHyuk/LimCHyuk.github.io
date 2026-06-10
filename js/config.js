@@ -59,7 +59,7 @@ export const getConfig = () => {
     bride: { role: "신부", name: "강 지 완" },
     dateTime: "2026. 09. 19. SAT 17 : 00",
     venue: "더 화이트 베일 1F 화이트베일홀",
-    // calendar: { year: 2026, month: 9, day: 19 },
+    calendar: { year: 2026, month: 9, day: 19 }, //이거원래 슬래시 두개있었음
     greeting: [
       "2019년 6월<br>소중한 인연으로 만나<br>약속했습니다.",
       "그 약속처럼 서로의 계절이 되어<br>7년의 계절을 함께 걸어왔습니다.",
