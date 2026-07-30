@@ -10,9 +10,9 @@ export const VERSION = (() => {
 
   const version =
     r < 0.45 ? '1' :
-    r < 0.90 ? '2' :
-    r < 0.99 ? '3' :
-    '4';
+    r < 0.90 ? '1' :
+    r < 0.99 ? '1' :
+    '1';
 
   console.log(`VERSION: ${version}`);
 
