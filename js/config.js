@@ -116,10 +116,10 @@ export const getConfig = () => {
 //       ]
 //      },
     ],
-    gallery: {
-      imageCount: 18,
-      galleryDescription: "화면을 새로고침해서 다른 버전의 청첩장을 확인해보세요."
-    },
+    //gallery: {
+    //  imageCount: 18,
+    //  galleryDescription: "화면을 새로고침해서 다른 버전의 청첩장을 확인해보세요."
+   // },
     account: {
       desc: [
         "소중한 축복의 마음<br>진심으로 감사드립니다.",
