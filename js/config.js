@@ -118,7 +118,7 @@ export const getConfig = () => {
     ],
     gallery: {
       imageCount: 18,
-      galleryDescription: "화면을 새로고침해서 다른 버전의 청첩장을 확인해보세요."
+      galleryDescription: "우리의 가장 빛나는 시간을 함께해주세요."
     },
     account: {
       desc: [
